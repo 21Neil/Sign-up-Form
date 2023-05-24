@@ -1,7 +1,7 @@
 # Sign-up Form
 
-https://21neil.github.io/Sign-up-Form/
-依照設計稿做出註冊畫面
+https://21neil.github.io/Sign-up-Form/  
+依照設計稿做出註冊畫面，並設計出注重UX的表單驗證
 
 ## 設計稿
 
