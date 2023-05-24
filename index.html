@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
     <aside>
-      <img src="assets/halie-west-25xggax4bSA-unsplash.jpg" alt="">
+      <img src="assets/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
       <div>
-        <img src="assets/odin-lined.png" alt="">
+        <img src="assets/odin-lined.png" alt="" />
         <h1>ODIN</h1>
       </div>
     </aside>
-    <div></div>
-  </main>
-</body>
+    <main>
+      <div class="container mt-4">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br />
+          Sign up <em>now</em> to get started
+        </p>
+        <p>You <i>know</i> you want to.</p>
+      </div>
+      <form novalidate action="">
+        <div class="form-header-input">
+          <h2>Let's do this!</h2>
+          <div class="input-group-container">
+            <div class="input-container">
+              <label for="first-name">FIRST NAME(required)</label>
+              <input type="text" name="first-name" id="first-name" required />
+              <span class="error"></span>
+            </div>
+            <div class="input-container">
+              <label for="last-name">LAST NAME(required)</label>
+              <input type="text" name="last-name" id="last-name" required />
+              <span class="error"></span>
+            </div>
+            <div class="input-container">
+              <label for="email">EMAIL(required)</label>
+              <input type="email" name="email" id="email" required />
+              <span class="error"></span>
+            </div>
+            <div class="input-container">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" name="phone-number" id="phone-number" />
+            </div>
+            <div class="input-container">
+              <label for="password">PASSWORD(required)</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+              />
+              <span class="error"></span>
+            </div>
+            <div class="input-container">
+              <label for="confirm-password">CONFIRM PASSWORD(required)</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+              <span class="error"></span>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <button>Create Account</button>
+          <p class="login-info">
+            Already have an account? <span><a href=""> Log in</a></span>
+          </p>
+        </div>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
